@@ -1,0 +1,9 @@
+{
+  "name": "ts-debug",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-typescript": "~0.4.0",
+    "grunt": "~0.4.0"
+  }
+}
