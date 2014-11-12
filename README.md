@@ -69,3 +69,32 @@ Options: basePath="src"
   write file: src/other-file.js => l:/User/projects/WidgetWorks/wiwo-playground/grunt-typescript-debug/dist/other-file.js
 6 files created. js: 6 files, map: 0 files, declaration: 0 files (492ms)
 ```
+
+
+__Expected output:__
+
+```bash
+--host.writeFile: src/app.js
+  write file: src/app.js => l:/User/projects/WidgetWorks/wiwo-playground/grunt-typescript-debug/dist/app.js
+--host.writeFile: src/other-file.js
+  write file: src/other-file.js => l:/User/projects/WidgetWorks/wiwo-playground/grunt-typescript-debug/dist/other-file.js
+2 files created. js: 2 files, map: 0 files, declaration: 0 files
+```
+
+__Actual output:__
+
+```bash
+--host.writeFile: src/app.js
+  write file: src/app.js => l:/User/projects/WidgetWorks/wiwo-playground/grunt-typescript-debug/dist/app.js
+--host.writeFile: src/other-file.js
+  write file: src/other-file.js => l:/User/projects/WidgetWorks/wiwo-playground/grunt-typescript-debug/dist/other-file.js
+--host.writeFile: src/app.js
+  write file: src/app.js => l:/User/projects/WidgetWorks/wiwo-playground/grunt-typescript-debug/dist/app.js
+--host.writeFile: src/other-file.js
+  write file: src/other-file.js => l:/User/projects/WidgetWorks/wiwo-playground/grunt-typescript-debug/dist/other-file.js
+--host.writeFile: src/app.js
+  write file: src/app.js => l:/User/projects/WidgetWorks/wiwo-playground/grunt-typescript-debug/dist/app.js
+--host.writeFile: src/other-file.js
+  write file: src/other-file.js => l:/User/projects/WidgetWorks/wiwo-playground/grunt-typescript-debug/dist/other-file.js
+6 files created. js: 6 files, map: 0 files, declaration: 0 files (492ms)
+```
